@@ -63,7 +63,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    const stockfishWorker = new Worker('/js/stockfish-17-lite-single.js');
+    const stockfishWorker = new Worker(`${process.env.PUBLIC_URL}/js/stockfish-17-lite-single.js`);
     setStockfish(stockfishWorker);
 
     return () => {
