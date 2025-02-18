@@ -8,7 +8,7 @@ import './App.css';
 
 var DEPTH = 15;
 
-
+/*
 function App() {
   return (
     <div className="App">
@@ -29,8 +29,8 @@ function App() {
     </div>
   );
 }
-
-const AppTmp = () => {
+*/
+const App = () => {
   const [game, setGame] = useState(new Chess());
   const [stockfish, setStockfish] = useState(null);
   const [bestMove, setBestMove] = useState('');
@@ -115,6 +115,4 @@ const AppTmp = () => {
   );
 };
 
-// export default App;
-
-export default AppTmp;
+export default App;
